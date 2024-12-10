@@ -1,0 +1,186 @@
+/* joinUs.css */
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+}
+
+/* Form Container */
+.webform-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Form Elements */
+form fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+form legend {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #555;
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+input[type="text"], input[type="email"], input[type="date"], input[type="range"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Button Styles */
+button[type="submit"], button[type="reset"] {
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover, button[type="reset"]:hover {
+    background-color: #333;
+}
+
+/* Input Focus Effects */
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #1a73e8;
+}
+
+input:valid, select:valid, textarea:valid {
+    background-color: #e0ffe0;
+}
+
+input:invalid, select:invalid, textarea:invalid {
+    background-color: #ffe0e0;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1a1a1a;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .navbar ul li {
+        display: block;
+        padding: 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 1rem;
+    }
+
+    .webform-section {
+        padding: 15px;
+        margin: 20px;
+    }
+/* focus pseudo class used to format valid and invalid boxes */ 
+    input:focus:valid {
+        background-color: #e0ffe0;
+    }
+
+    input:focus:invalid {
+        background-color: #ffe0e0;
+    }
+
+}

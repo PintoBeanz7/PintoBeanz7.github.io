@@ -1,0 +1,88 @@
+<!-- Set metadata of document -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+    <head>
+        <title>Home</title>
+        <!-- link to CSS file -->
+        <link rel="stylesheet" href="styles.css">
+        <script>
+
+        // called a JavaScript function to keep track of current day and time
+        function showCurrentTime() {
+            const now = new Date();
+            const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            const currentDay = dayNames[now.getDay()];
+            const currentTime = now.toLocaleTimeString();
+
+            //current date and time displayed
+            document.getElementById("current-time").textContent = `Today is ${currentDay}, and the current time is ${currentTime}`;
+        }
+
+        // Send an alert using JavaScript
+        function sendAlert() {
+            alert("Welcome to The World Studios! We are excited to hear about your passion for all things EDM!");
+        }
+
+
+
+        // delay or run a command at a specified interval
+        function startInterval() {
+            setInterval(function () {
+                // Change the background color of the page
+                document.body.style.backgroundColor = getRandomColor();
+            }, 3000);
+        }
+
+
+
+        //Convert between a number and text (e.g., convert a number to a word)
+        function convertNumberToText() {
+            const number = 5;  // Example number
+            const numberWords = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"];
+            const numberInText = numberWords[number];
+            document.getElementById("number-text").textContent = `The number ${number} in text is: ${numberInText}`;
+        }
+
+
+
+        // initialize functions when the page loads
+        window.onload = function () {
+            showCurrentTime();       // Show the current time on page load
+            generateRandomNumber();  // Display a random number
+            convertNumberToText();   // Convert a number to text
+            startInterval();         // change background color every 3 seconds
+                   
+        }
+    </script>
+</head>
+<body>
+    <!--images and nav lists with links included -->
+    <div class="banner">
+        <div class="navbar">
+            <img src="est%202024.png" align="left" class="logo">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="aboutUs.html">about us</a></li>
+                <li><a href="reviews.html">what fans are saying</a></li>
+                <li><a href="joinUs.html">join us</a></li>
+            </ul>
+        </div>
+        <!-- sectioning and text level elements used -->
+        <div class="content">
+            <h1>DOWNLOAD NOW</h1>
+            <p> Latest songs and hottest playlists are just a click away</p>
+            <div>
+                <button type="button" onclick="sendAlert()">CLICK HERE</button>
+            </div>
+            <p id="current-time"></p> <!-- Displays current day and time -->
+            <p id="random-number"></p> <!-- Displays random number -->
+            <p id="number-text"></p> <!-- Displays number in text -->
+            <p id="countdown"></p> <!-- Displays countdown timer -->
+        </div>
+    </div>
+</body>
+</html>

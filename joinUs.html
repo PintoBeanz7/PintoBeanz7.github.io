@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Community</title>
+    <!-- link to CSS file -->
+    <link rel="stylesheet" href="joinUs.css">
+
+
+    <!-- Include inline images and nav list -->
+    <div class="banner">
+        <div class="navbar">
+            <img src="est%202024.png" align="left" class="logo">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="aboutUs.html">about us</a></li>
+                <li><a href="reviews.html">what fans are saying</a></li>
+                <li><a href="joinUs.html">join us</a></li> <!-- New Link to Join Us Page -->
+            </ul>
+        </div>
+    </div>
+</head>
+<body>
+    <header>
+        <h1>Sign up now to join our community!</h1>
+    </header>
+    <main>
+        <!-- Web Form Section that includes multiple field sets -->
+        <section class="webform-section">
+            <h2>Join Our Community</h2>
+            <form action="#" method="post">
+                <!-- Personal info fieldset -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="username">Username:</label>
+                    <!-- pattern for username must be alphanumeric with 5 to 15 characters -->
+                    <input type="text" id="username" name="username" required pattern="^[a-zA-Z0-9]{5,15}$" placeholder="Enter a username (5-15 characters)">
+                    <br><br>
+                    <!-- date and time input types used -->
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                    <br><br>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                </fieldset>
+
+                <!-- Subscription information fieldset-->
+                <!-- radio buttons -->
+                <fieldset>
+                    <legend>Subscription Type</legend>
+                    <label for="free">Free</label>
+                    <input type="radio" id="free" name="subscription" value="free" required>
+                    <label for="premium">Premium</label>
+                    <input type="radio" id="premium" name="subscription" value="premium" required>
+                    <br><br>
+
+
+                </fieldset>
+
+                <!-- Music preferences fieldset  -->
+                <!-- selection list created -->
+                <fieldset>
+                    <legend>Music Preferences</legend>
+                    <label for="genre">Favorite Genre:</label>
+                    <select id="genre" name="genre" required>
+                        <option value="house">House</option>
+                        <option value="trap">Trap</option>
+                        <option value="melodic">Melodic</option>
+                        <option value="techno">Techno</option>
+                    </select>
+                    <br><br>
+
+                    <label for="platform">Preferred Music Platform:</label>
+                    <input list="platforms" id="platform" name="platform">
+                    <datalist id="platforms">
+                        <option value="Spotify">
+                        <option value="Apple Music">
+                        <option value="YouTube Music">
+                        <option value="Amazon Music">
+                    </datalist>
+                    <br><br>
+
+
+                    <!-- range sliders for volume -->
+                    <label for="volume">Volume Preference:</label>
+                    <input type="range" id="volume" name="volume" min="0" max="100" value="50" required>
+                    <br><br>
+                </fieldset>
+
+                <!-- User bio fieldset -->
+                <fieldset>
+                    <legend>Your Bio</legend>
+                    <label for="bio">Tell us about your music preferences:</label>
+                    <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Enter your bio..."></textarea>
+                    <br><br>
+                </fieldset>
+
+                <!-- Submit and Reset Buttons -->
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 The World Studios. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

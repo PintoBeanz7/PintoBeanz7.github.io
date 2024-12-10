@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: sans-serif; 
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('whatsHot.jpg') no-repeat center center fixed; 
+    background-size: cover; 
+    color: #333;
+    text-align: center;
+}
+
+header {
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    text-align: center; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    font-size: 2.5em;
+}
+.navbar {
+    width: 85%;
+    margin: auto; 
+    padding: 35px 0; 
+    display: flex; 
+    align-times: center; 
+    justify-content: space-between; 
+    
+}
+.logo {
+    width: 175px; 
+    border: 1px solid white;
+    cursor: pointer;
+}
+.navbar ul li {
+    list-style: none; 
+    display: inline-block;
+    margin: 0 20px; 
+    position: relative; 
+}
+.navbar ul li a {
+    text-decoration: none; 
+    color: #fff; 
+    text-transform: lowercase; 
+}
+/* experimented with pseudo classes and elements */ 
+.navbar ul li::after{
+    content: ''; 
+    height: 3px; 
+    width: 0; 
+    background: #DFDFDF;
+    position: absolute; 
+    left: 0; 
+    bottom: -10px;
+    transition: 0.5s; 
+}
+.navbar ul li:hover::after{
+    width: 100%; 
+    
+}
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    position: relative; 
+}
+
+.about-section {
+  background: rgba(255, 255, 255, 0.9); 
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+
+.about-section:hover{
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #4a4e69;
+    font-size: 1.8em;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: transparent; 
+    color: white; white 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+    
+  
